@@ -1,10 +1,10 @@
 const scan = require('./scan');
 const fs = require('fs');
 
-
 //////////////
 // PARAMETERS
 //////////////
+
 // Should set these from config file eventually
 var __jsonPath = './data.json'
 var __dirsPath = './dirs.json'
@@ -14,9 +14,6 @@ function writeDirs(dirsPath, dirs) {
     fs.writeFileSync(dirsPath, JSON.stringify(dirs));
     console.log("Directories written");
 }
-
-
-
 
 //////////////
 // DIRECTORY
@@ -124,11 +121,10 @@ function rescan(jsonPath, json, dir) {
     }
 }
 
-
-
 //////////////
 // CLI
 //////////////
+
 function main() {
     if (process.argv.length <= 2) {
         console.log("Usage: " + __filename + " <directory add/directory remove/rescan> <path>");
