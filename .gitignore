@@ -1,3 +1,7 @@
+# Datafiles/Config
+data.json
+dirs.json
+
 # Logs
 logs
 *.log
